@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HIDRO SMART | Premium Hydroponic Produce</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#fcf9f8",
+                    "on-background": "#1c1b1b",
+                    "surface-container-high": "#eae7e7",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#e5e2e1",
+                    "outline": "#707a6c",
+                    "secondary-container": "#fe753f",
+                    "on-secondary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#bec9c1",
+                    "surface-bright": "#fcf9f8",
+                    "tertiary": "#4d5851",
+                    "on-primary-fixed": "#002204",
+                    "on-error-container": "#93000a",
+                    "primary": "#0d631b",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-tertiary-container": "#e9f4eb",
+                    "surface-container": "#f0eded",
+                    "outline-variant": "#bfcaba",
+                    "on-tertiary-fixed": "#141e18",
+                    "surface-container-low": "#f6f3f2",
+                    "on-secondary-fixed": "#380d00",
+                    "primary-fixed": "#a3f69c",
+                    "inverse-primary": "#88d982",
+                    "on-surface-variant": "#40493d",
+                    "on-secondary-fixed-variant": "#812900",
+                    "primary-fixed-dim": "#88d982",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e5e2e1",
+                    "surface-dim": "#dcd9d9",
+                    "inverse-on-surface": "#f3f0ef",
+                    "inverse-surface": "#313030",
+                    "secondary-fixed-dim": "#ffb59b",
+                    "on-secondary-container": "#631d00",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#ffdbcf",
+                    "on-surface": "#1c1b1b",
+                    "primary-container": "#2e7d32",
+                    "tertiary-container": "#667069",
+                    "on-primary-fixed-variant": "#005312",
+                    "on-tertiary-fixed-variant": "#3f4943",
+                    "surface": "#fcf9f8",
+                    "tertiary-fixed": "#dae5dc",
+                    "on-primary-container": "#cbffc2",
+                    "surface-tint": "#1b6d24",
+                    "secondary": "#a93801"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "base": "8px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "label-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"],
+                    "headline-sm": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Inter"],
+                    "display-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade { animation: fade-in 0.6s ease-out forwards; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/10 shadow-[0px_10px_30px_rgba(0,0,0,0.04)]">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-12">
+<a class="font-display-lg text-headline-sm font-bold text-primary" href="#">HIDRO SMART</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="#">Catalog</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Traceability</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Impact</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Support</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-low border-none rounded-full w-64 focus:ring-2 focus:ring-primary/20 text-body-md font-body-md" placeholder="Search produce..." type="text"/>
+</div>
+<button class="p-2 hover:bg-surface-container-low/50 rounded-full transition-all duration-300">
+<span class="material-symbols-outlined text-on-surface">shopping_cart</span>
+</button>
+<button class="p-2 hover:bg-surface-container-low/50 rounded-full transition-all duration-300">
+<span class="material-symbols-outlined text-on-surface">account_circle</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Image Gallery -->
+<div class="lg:col-span-7 flex flex-col gap-6 animate-fade">
+<div class="aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="A high-resolution, editorial style photograph of a vibrant bunch of hydroponic butterhead lettuce, fresh with glistening water droplets. The background is a clean, bright white minimalist studio setting, emphasizing the deep greens and soft textures of the leaves. Soft natural light highlights the organic curves and clinical freshness of the produce." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAiD7XYoSYFh62Bj_hHMiiPlenLtvXOKQC6SUHrEz8M8DKfDFi2waQKgjZ6pPT5IhPkltzv7hRqz-xkJGMx4IFMQBt-7j5eo6vRcN_Wu4wGQeVe9CzHR2N-B9x6GZ02jjuVcpDh2Z_iKMJuZzDuYthpTmfrBCLFgosbo-m1Q3axWUKlx0bX2aZZtdIstUyPWuYh82ZpU487DGOJ7tgP6oIzbDfT1i0Y_mYijRcBWFaPWC1pIVRNF7sZboCXwlRZfAmXibXxNPHPr8"/>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<div class="aspect-square rounded-lg overflow-hidden cursor-pointer border-2 border-primary ring-offset-2">
+<img class="w-full h-full object-cover" data-alt="Macro detail shot of hydroponic lettuce roots and leaves, showing intense green colors and delicate veins. The lighting is bright and high-key, maintaining a premium agricultural tech aesthetic with soft shadows and crisp focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_qkn5yHT3dvvIInZ3GyYL4LtuaIa57G7eLXoH4LDU-5N6GlCdByBoeAnlL9Iuk1PrGkSkG2hawW0oh2iPMWzQ3XMhuXSBDFtf6nPHktsDW6YIsk6q8QvelbFjG89_3ZpJxWqYL8-KxELVHRY4DUi7SC1LU7wydqWI-vNsC-RYalxZBNwHRNHuMffDPClEx3BYh26sfQmWfGjJtCNRmCXiSgLBO8yzNVrhQgC2v6cM-qr7W_RvT2yBlQF3Du-tEuJjxWCwILZgCX4"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden cursor-pointer hover:opacity-80 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="A side profile of the lettuce head showing the dense, layered structure of the leaves. Shot in a bright, modern kitchen environment with minimalist marble surfaces and soft bokeh background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQXb_QwZsNMr2oh9Iewh9A2jZ3RPB5mvNfAJSzkvGriwDidtlHW1EXa-wXA6LDVnmTe-l3CLvRzdZvCYwMJFbw8dkrQkPQvL3ScpCY68OZiSoFVn0-oxeNDrB70abXqW9-tMvT3NmP_-E417xlNBRvGCyIE-ACaSVvC0E4NCtVkFHIeH-bxjukDBs-JddqtiQ9k8hiCcIWsbJsI1w7eRKuj7lbg1xVm3RUo_D23tKovCvIuthyuVkwjLuHTzr25qmgNrmnj5yi-9g"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden cursor-pointer hover:opacity-80 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="The product in its sustainable, minimal packaging. A clear compostable wrap with a clean HIDRO SMART typographic label, sitting on a light wooden surface in a bright sunlit room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoP0phRgnstLPsI8i4m82Dfmxo_Fml_4QBaZP3wqh4D8fFKhJfmxco5y-q87394q7uED-g0N-w02RZ62wKC_Qqi5uBoL-blIMKi8lxX03LNDVClr_ZsX72pVp26PZO4iQM3HyXNcpGMtIqutyT48a3igxCmcwXYPBWP6r_mEl3JE_3lwa0jzXPrlFhwONqMFByPwz88BktMOng1aAoZA1AqHVbXk8C8jsKhKtK7pfhpB4FlN7fuczyBKvWj-QaUl7q1X1TilLctaM"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden cursor-pointer hover:opacity-80 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="A top-down view of the produce being prepared, surrounded by clean kitchen tools and a few drops of water on a light grey stone countertop, embodying a healthy and premium lifestyle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB73HBn5jmFIRSxwZiLaxLkq5JzZyEscXqxwn9gfKGgPsXzEUZOahQ9uBdxGQtwmvIAnwz_y0GGGBGR0ZKaa9O_nqWfagwpcx22AJfBv6lGAZpdF1z2NEQoJ4DLv1VWlLR4CJSXUD_dDEszW1EKlf6vuj80C0NFYVaBLhy_tj1CLKmmMkS0YD7d2vl8biuX-Q04YsITp3atO3WwIpIsYuUxKg97HzADgUbLHD22SPENW40337bTmTN99trrVjOAowJQMWrezZ-PoY"/>
+</div>
+</div>
+</div>
+<!-- Right Column: Product Details -->
+<div class="lg:col-span-5 flex flex-col gap-8 lg:sticky lg:top-32 animate-fade" style="animation-delay: 0.1s;">
+<header class="flex flex-col gap-2">
+<div class="flex justify-between items-start">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md">
+                            In stock
+                        </span>
+<button class="p-2 text-outline hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-headline-md text-on-background mt-2">Lechuga Mantecosa Hidropónica</h1>
+<div class="flex items-baseline gap-3 mt-1">
+<span class="font-headline-md text-primary">$4.50</span>
+<span class="font-body-md text-on-surface-variant">/ unidad (aprox. 300g)</span>
+</div>
+</header>
+<div class="flex flex-col gap-4">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Cantidad</label>
+<div class="flex items-center gap-4">
+<div class="flex items-center border border-outline-variant rounded-lg overflow-hidden">
+<button class="p-3 hover:bg-surface-container transition-colors" onclick="this.parentNode.querySelector('input').stepDown()">
+<span class="material-symbols-outlined text-body-md">remove</span>
+</button>
+<input class="w-16 text-center border-none bg-transparent font-body-lg focus:ring-0" min="1" type="number" value="1"/>
+<button class="p-3 hover:bg-surface-container transition-colors" onclick="this.parentNode.querySelector('input').stepUp()">
+<span class="material-symbols-outlined text-body-md">add</span>
+</button>
+</div>
+<span class="text-on-surface-variant font-body-md">Límite: 10 por cliente</span>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<button class="w-full py-4 bg-primary text-on-primary rounded-xl font-headline-sm hover:bg-primary-container transition-all active:scale-[0.98]">
+                        Comprar ahora
+                    </button>
+<button class="w-full py-4 border-2 border-primary text-primary rounded-xl font-headline-sm hover:bg-primary-fixed/20 transition-all active:scale-[0.98]">
+                        Agregar al carrito
+                    </button>
+</div>
+<!-- Traceability block -->
+<div class="glass-card p-6 rounded-2xl border border-outline-variant/30 flex items-center gap-6 shadow-[0px_10px_30px_rgba(0,0,0,0.04)]">
+<div class="p-4 bg-white rounded-xl border border-outline-variant/20 shadow-sm">
+<span class="material-symbols-outlined text-[40px] text-on-background">qr_code_2</span>
+</div>
+<div class="flex flex-col">
+<p class="font-body-lg text-on-background font-semibold">Trazabilidad Total</p>
+<p class="font-body-md text-on-surface-variant">Escanea para ver el recorrido completo de este producto desde nuestra granja inteligente.</p>
+</div>
+</div>
+<!-- Key benefits quick list -->
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-label-md text-on-surface-variant">Sin Pesticidas</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+<span class="font-label-md text-on-surface-variant">Ahorro de Agua 90%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tabbed Section -->
+<section class="mt-24 border-t border-outline-variant/20 pt-16 animate-fade" style="animation-delay: 0.2s;">
+<div class="flex gap-12 border-b border-outline-variant/10 overflow-x-auto hide-scrollbar mb-12">
+<button class="pb-6 border-b-2 border-primary text-primary font-bold whitespace-nowrap">Nutrition</button>
+<button class="pb-6 border-b-2 border-transparent text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">Benefits</button>
+<button class="pb-6 border-b-2 border-transparent text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">Conservation</button>
+<button class="pb-6 border-b-2 border-transparent text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">Recipes</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<div class="flex flex-col gap-6">
+<h3 class="font-headline-md text-on-background">Perfil Nutricional</h3>
+<p class="text-body-lg text-on-surface-variant">Nuestra lechuga mantecosa es cultivada en un ambiente controlado que maximiza la absorción de nutrientes, resultando en hojas más ricas en vitaminas A y K.</p>
+<div class="space-y-4">
+<div class="flex justify-between py-3 border-b border-outline-variant/10">
+<span class="text-on-surface-variant">Calorías</span>
+<span class="font-bold">15 kcal / 100g</span>
+</div>
+<div class="flex justify-between py-3 border-b border-outline-variant/10">
+<span class="text-on-surface-variant">Fibra</span>
+<span class="font-bold">1.2g</span>
+</div>
+<div class="flex justify-between py-3 border-b border-outline-variant/10">
+<span class="text-on-surface-variant">Vitamina A</span>
+<span class="font-bold">160% DV</span>
+</div>
+</div>
+</div>
+<div class="rounded-2xl overflow-hidden aspect-video">
+<img class="w-full h-full object-cover" data-alt="A clean, scientific but beautiful overhead shot of a fresh lettuce salad with thin radish slices and a light vinaigrette. The composition is artistic and minimalist, shot in high-key lighting with a focus on healthy, premium organic textures. Soft green and white tones dominate the frame." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQrJgIbq9u_g4WjZqa0DfyhFEbYVZ5KQ_HLvFHPsCvC2XhBFlDH9lrKli320nTdo7MWuTzgI1Zc1Ylzxw-k7aa3LDprCXl13x_YRm1DF08_lVDcr6_UV6qwm6IbfnVIknoxztvByJ8_cnpsMGnFRpqzj-tfpJzDDoyTize6Cqcom2dF0Qql9GOe84alEUJ4SHDMeNYfcvSACi6BNOdm2xfgA9iqrtS5-SZnw2foXf5hOoDbrkzzsNQKNA9Wn6eIATZN-HYvEueM1A"/>
+</div>
+</div>
+</section>
+<!-- Customer Reviews -->
+<section class="mt-32 animate-fade" style="animation-delay: 0.3s;">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="font-headline-md text-on-background">Opiniones Verificadas</h2>
+<div class="flex items-center gap-2 mt-2">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-md text-on-surface-variant">4.9 de 5 (124 reseñas)</span>
+</div>
+</div>
+<button class="px-8 py-3 bg-surface-container-high rounded-full font-label-md hover:bg-surface-container-highest transition-all">Escribir una reseña</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review Card 1 -->
+<div class="p-8 bg-surface-container-low rounded-2xl flex flex-col gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-outline-variant/30 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a smiling woman in her 30s with a natural, friendly look. Soft lighting, minimalist background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj6Klad2WstgF3TXfk1HYcyq08F_-6b1ONDcFp34TLyevMcS3xIdkarYqR4ftJpmzGlmo9B6NMJz6G9QRGAR9lgGdmKB2WC9FH9d_iRU_nqcB5a9tNYRltcF_hIIitRoprDl6pTbePAKs1gLYy2C0Seo3xkrUfvFShH8WZO6idd3NQQqaw4rVNWS1MlBg1FugpZyO5AvprSFXmR5J_gRwFTU5EvrjDJmLhxb81YSTkRP04uY24ygNUZR_Xjo5k88Ui-aEqVolpczM"/>
+</div>
+<div>
+<p class="font-bold">María G.</p>
+<p class="text-sm text-on-surface-variant">Comprador verificado</p>
+</div>
+</div>
+<div class="flex gap-2">
+<div class="w-20 h-20 rounded-lg overflow-hidden border border-outline-variant/10">
+<img class="w-full h-full object-cover" data-alt="A user-submitted photo of a fresh salad bowl containing green lettuce, cherry tomatoes, and seeds. Natural window lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD8Mr5j129IcdIo3qc0iOYJznvaFivL5OGMcmoJf4HOpzKW00-LJ_CM8qTgKVGOx1AT6Pt7PbdtYHwVGaZHw5AJRobCiXce1YwQcuH9-mccKuCDCCOWWc0fd57RtGIHXvxtXp8Ch4j8rY2Ek0CKFC-H_D3b-SVWC6r6TzjxrQSDMjLYrqpO_VNn4uI4XSJMSXF3feiQMb3Xq-gYhT_mnuIGbXvYlczVGcZ9bwyArsbKaubmAfiRxpDWJTXQHqw9hEIycv6bfmzThE"/>
+</div>
+</div>
+<p class="text-body-md text-on-surface-variant italic">"Increíble frescura. Realmente se nota la diferencia de la hidroponía, dura mucho más en la heladera."</p>
+</div>
+<!-- Review Card 2 -->
+<div class="p-8 bg-surface-container-low rounded-2xl flex flex-col gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-outline-variant/30 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A portrait of a male chef in a clean white uniform, smiling warmly. Professional studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsESJKqNsqAhlDKFu_rC801Ji1feNxR4DguGKcl7CrSN5FPRAtrUOa9wCr6jYvbcN6k0jT4rtiqhJvQ60Dl4ykDYzdGpwr1s4ME-pOZdjVJH1e-aZHaLZLwfxI4ASBHIrF4xtS2VZw3iCT5sDnNHoXUDrclXYfLrcppltTb4PNTqeMtHJooyJIS-3uANAS5NQqiOhUJdzYJPqjcfqAmoFNxbkSM1JRs3IH_uhpDsjnQoT5O9WAfz8VJiysT8cRJ2nLhKujmPJ2qqI"/>
+</div>
+<div>
+<p class="font-bold">Carlos R.</p>
+<p class="text-sm text-on-surface-variant">Chef Profesional</p>
+</div>
+</div>
+<p class="text-body-md text-on-surface-variant italic">"La textura es perfecta. Las hojas son firmes y tienen un color espectacular para mis presentaciones."</p>
+</div>
+<!-- Review Card 3 -->
+<div class="p-8 bg-surface-container-low rounded-2xl flex flex-col gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-outline-variant/30 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up of a young man smiling, bright natural lighting, modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwR81HNs1zIHPIBD6mgvurFFoVo8HNzHioZchVgAdVYySjODKfWA46NQGz6LvrfzKpisxzYCT1-D3pXFDpbnxZFGm4vke1MPsCAj4GSWdo3u5oI9Xleg47urg1EGiTWASoACb3PCA45Cuow4vBbgL4BT62VyZab5wGcxU9SbrZ8Xll_MpDe1S3_zM6gmBqMZkWqb4P9WwjzaJUeT9MrzEn5c57Z_r7NcLY7LgW5bJumNozGf-vhzMOeAQF4zSH2xa49vgrGzuGFNo"/>
+</div>
+<div>
+<p class="font-bold">Lucía M.</p>
+<p class="text-sm text-on-surface-variant">Comprador verificado</p>
+</div>
+</div>
+<div class="flex gap-2">
+<div class="w-20 h-20 rounded-lg overflow-hidden border border-outline-variant/10">
+<img class="w-full h-full object-cover" data-alt="Photo of the lettuce still in its box just after delivery, looking crisp and vibrant." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA2MPpWQH_w7sjEwvqeTxoo5D0hWTYLZB5zl5zAJUf2kjfAIghVRJ8677wqvesk_7C77yEDzzO1SVOCgEB7loJuSNoULzXZI2hjCowu9fDB5-iON1Sa0IRG4yE9Jl_1QuJ6xGIEPIwywJkiEpAzxrhqPvaPJXtCUea2vZJPat-xQCEdfJ2Ds0C5y4dkw1-GJJ9HnWcjU0TIb1UJ6y2Cb2Z70Xu8Is8GOiu4rGcTKrSxShwXHTdCRoqIliPqORRcu4KvcdRAUfDJs8"/>
+</div>
+</div>
+<p class="text-body-md text-on-surface-variant italic">"Me encanta saber de dónde viene lo que como. El código QR es genial."</p>
+</div>
+</div>
+</section>
+<!-- Related Products -->
+<section class="mt-32 animate-fade" style="animation-delay: 0.4s;">
+<div class="flex justify-between items-center mb-12">
+<h2 class="font-headline-md text-on-background">Productos Relacionados</h2>
+<div class="flex gap-4">
+<button class="p-3 border border-outline-variant rounded-full hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="p-3 border border-outline-variant rounded-full hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex gap-gutter overflow-x-auto hide-scrollbar pb-8">
+<!-- Product Card 1 -->
+<div class="min-w-[300px] group">
+<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container-low mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Premium bunch of hydroponic kale with deep purple and green hues, shot in a minimalist studio setting with soft side lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx-XQB45vsHlYIodQyUFwhRFgKyoY6UFDzoDkTcYU0sS2fmPOB0Jn_JyqilQ4twD_uyQsQ2XCdpflu3MlxF62pJ8HDU1ri2W7d4luAG3vKr_gHxcarnY5AeVqaQKsG4rWGkg-Z08rzJUAxXe4ibgVm_0LG9sxzG49Qr-6bOw8sQc5qriIK6X-CTAGtzKvWQZ8k-askEG9fCdtFAxPX_AQBO-f0nIC3Mk0FjKDiiCUSz7DmW1TtDH8g3Xd2L0gQEUhpPPoUkOj532w"/>
+<div class="absolute bottom-4 right-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all">
+<button class="p-4 bg-white rounded-full shadow-lg text-primary">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+</div>
+<h4 class="font-headline-sm text-on-background">Kale Rizado</h4>
+<p class="text-primary font-bold mt-1">$3.80</p>
+</div>
+<!-- Product Card 2 -->
+<div class="min-w-[300px] group">
+<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container-low mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Fresh hydroponic spinach leaves piled gracefully on a white marble surface, bright exposures and clean editorial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuEEVlMrCt-Isnb56u94jlwdndpfJTvtxSRdinavPRFKnJRBkhFJnwFNpQ6xPdJNKgeI_0RSeLYZWVKJOlmMkaVuCjSmcAhQTLjRRmKOMWC0FUNHW9aKY94Dl81pPIzwAZoUCRNFr321Ml0mzhcF9NlLlSByjY2S9tizYhAA5JW3N5x9xnMK4qqj1xT8K0kkYi2m43z5a9tIf0mkJdp5o0nyYynlvEGrCgOupf90bCPr_YZzRV8eVQVMxccBWN22W7YhXUJESCHPI"/>
+<div class="absolute bottom-4 right-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all">
+<button class="p-4 bg-white rounded-full shadow-lg text-primary">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+</div>
+<h4 class="font-headline-sm text-on-background">Espinaca Baby</h4>
+<p class="text-primary font-bold mt-1">$4.20</p>
+</div>
+<!-- Product Card 3 -->
+<div class="min-w-[300px] group">
+<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container-low mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A mix of microgreens including radish and beet, showing vibrant pink and green stems in a clinical white tech environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXjJH2MFFF_-IzSddmRHHDt6mWj20YvIt4Ji1jdaCtnu34INV11n7rsIAx5yCcoe_DIriAXYZLSpkq6iHZkvM9L88k6ANghrZKHj_7EXQ9QTA32wTtIXsLY6thKwdKFbovH9Ns8T6cKK-QhTQxWCWTDw_3PpJHVshM2L5QQyk14CsEEKTBwXpQgADnGg3-b6donxwdqwW1PJjxsZPY-ICmZvYXFQMPHVt7We-DfAnbZyGdFMZReB_UFGpv7glMvJukNQdMWggRgjg"/>
+<div class="absolute bottom-4 right-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all">
+<button class="p-4 bg-white rounded-full shadow-lg text-primary">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+</div>
+<h4 class="font-headline-sm text-on-background">Mix Microgreens</h4>
+<p class="text-primary font-bold mt-1">$6.50</p>
+</div>
+<!-- Product Card 4 -->
+<div class="min-w-[300px] group">
+<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container-low mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant red cherry tomatoes on the vine, glistening and fresh against a clean white backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyhk-trVdWlf0r66oUZdSq97kFsWfdrcjkVNtpTHL_8TnH915gJX2DvK66ygd6jt-4NPbo02sgSIEk1ZrsaNnWbxRmXJX31nG2J9DzixmEc91PfUjevgUp895pAzaXNZTJ9qrSkBTo1p50GvdHTo-C7Ho1LZfO2sYLXgRJiyWbiWdQolv_VdI-uTX3ulom9_3ty88cnMfGTnVhJNGvjxoXlmxABvpDbtYONOYpEdCw2Av1KDTvWUeUtozCWKu1mCumq14beXL4zLk"/>
+<div class="absolute bottom-4 right-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all">
+<button class="p-4 bg-white rounded-full shadow-lg text-primary">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+</div>
+<h4 class="font-headline-sm text-on-background">Tomates Cherry</h4>
+<p class="text-primary font-bold mt-1">$5.00</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 w-full py-16">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col gap-6">
+<a class="font-display-lg text-headline-sm font-bold text-primary" href="#">HIDRO SMART</a>
+<p class="font-body-md text-on-surface-variant">Cultivando el futuro de la alimentación a través de la precisión tecnológica y el respeto por el medio ambiente.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-md text-on-background font-bold uppercase tracking-widest">Empresa</h5>
+<a class="text-on-surface-variant hover:text-primary transition-transform hover:translate-x-1 font-body-md" href="#">Our Labs</a>
+<a class="text-on-surface-variant hover:text-primary transition-transform hover:translate-x-1 font-body-md" href="#">Sustainability Report</a>
+<a class="text-on-surface-variant hover:text-primary transition-transform hover:translate-x-1 font-body-md" href="#">Traceability Protocol</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-md text-on-background font-bold uppercase tracking-widest">Soporte</h5>
+<a class="text-on-surface-variant hover:text-primary transition-transform hover:translate-x-1 font-body-md" href="#">Shipping Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-transform hover:translate-x-1 font-body-md" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-transform hover:translate-x-1 font-body-md" href="#">FAQ</a>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="font-label-md text-on-background font-bold uppercase tracking-widest">Newsletter</h5>
+<div class="flex flex-col gap-3">
+<input class="px-4 py-3 bg-background border border-outline-variant rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none font-body-md" placeholder="Email address" type="email"/>
+<button class="bg-primary text-on-primary py-3 rounded-lg font-bold hover:bg-primary-container transition-colors">Unirme</button>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-16 pt-8 border-t border-outline-variant/10 text-center text-on-surface-variant text-body-md font-body-md">
+            © 2024 HIDRO SMART. Precision Agriculture for a Sustainable Future.
+        </div>
+</footer>
+<script>
+        // Micro-interactions for tabs
+        const tabs = document.querySelectorAll('section button[class*="pb-6"]');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => {
+                    t.classList.remove('border-primary', 'text-primary', 'font-bold');
+                    t.classList.add('border-transparent', 'text-on-surface-variant');
+                });
+                tab.classList.remove('border-transparent', 'text-on-surface-variant');
+                tab.classList.add('border-primary', 'text-primary', 'font-bold');
+            });
+        });
+
+        // Simple cart counter interaction
+        const addToCartBtn = document.querySelectorAll('button').forEach(btn => {
+            if(btn.innerText.includes('carrito') || btn.querySelector('.material-symbols-outlined')?.innerText === 'shopping_cart') {
+                btn.addEventListener('click', () => {
+                    btn.classList.add('scale-95');
+                    setTimeout(() => btn.classList.remove('scale-95'), 100);
+                });
+            }
+        });
+    </script>
+</body></html>
